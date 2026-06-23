@@ -45,6 +45,15 @@ Distilled from:
 - Use kuwahara-family filters for brush-like abstraction and local smoothing that preserves strong edges.
 - Keep filter radius conservative at first. Painterly passes can destroy form quickly.
 
+### Bloom and Glow
+
+- Use a luminance threshold pass to isolate bright or emissive areas before blurring. Sample the scene colour, keep only pixels above a brightness threshold, and pass those to the glow stage.
+- Apply a gaussian or multi-pass blur at increasing kernel radius for the glow spread. Separate horizontal and vertical passes for efficiency.
+- Additively blend the blurred glow back over the base render for the bloom effect. Additive blending accumulates light energy naturally.
+- Control bloom intensity with a strength multiplier on the additive blend weight and a softness curve on the threshold edge.
+- Bloom fits naturally into a post-processing composition pipeline alongside tone mapping and colour grading.
+- For emissive objects, store emissive intensity in a separate render target and use it as the direct bloom source to avoid over-blooming non-emissive bright surfaces.
+
 ## Tradeoffs
 
 - Halftone is legible and art-directable, but it can shimmer if the grid is unstable.
@@ -61,3 +70,7 @@ Distilled from:
 - `kuwahara`
 - `painterly`
 - `post-processing`
+- `bloom`
+- `glow`
+- `luminance`
+- `additive`

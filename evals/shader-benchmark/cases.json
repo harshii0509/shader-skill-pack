@@ -101,6 +101,86 @@
       ],
       "must_mention": ["render targets", "offscreen", "react three fiber", "transition"],
       "must_avoid": ["visa", "seo"]
+    },
+    {
+      "id": "stylization_bloom_glow",
+      "prompt": "I want a post-processing bloom pass where bright emissive areas glow and bleed luminance into surrounding pixels.",
+      "expected_primary_lane": "shader-stylization",
+      "expected_first_references": [
+        "shader-stylization/references/stylized-recipes.md"
+      ],
+      "must_mention": ["bloom", "glow", "luminance", "post-processing"],
+      "must_avoid": ["caustics", "scattering", "compute"]
+    },
+    {
+      "id": "fundamentals_fbm_noise",
+      "prompt": "How do I layer fBm noise with domain warping to get organic fluid motion on a surface shader?",
+      "expected_primary_lane": "shader-fundamentals",
+      "expected_first_references": [
+        "shader-fundamentals/references/foundations.md"
+      ],
+      "must_mention": ["fbm", "domain warping", "noise"],
+      "must_avoid": ["halftone", "caustics", "tsl"]
+    },
+    {
+      "id": "volume_simple_fog",
+      "prompt": "Add depth-based fog so geometry fades out smoothly into the background colour at distance.",
+      "expected_primary_lane": "shader-volumetrics",
+      "expected_first_references": [
+        "shader-volumetrics/references/atmosphere-and-volume.md"
+      ],
+      "must_mention": ["fog", "depth", "volumetric"],
+      "must_avoid": ["halftone", "fresnel", "compute"]
+    },
+    {
+      "id": "platforms_drei_postprocessing",
+      "prompt": "How do I wire up @react-three/drei helpers and @react-three/postprocessing EffectComposer in my R3F scene?",
+      "expected_primary_lane": "shader-platforms",
+      "expected_first_references": [
+        "shader-platforms/references/platform-patterns.md"
+      ],
+      "must_mention": ["drei", "postprocessing", "react three fiber"],
+      "must_avoid": ["halftone", "caustics", "scattering"]
+    },
+    {
+      "id": "lighting_water_refraction",
+      "prompt": "I want a water surface shader with normal-map driven ripples and glass-like refraction to the geometry below.",
+      "expected_primary_lane": "shader-lighting",
+      "expected_first_references": [
+        "shader-lighting/references/light-material-recipes.md"
+      ],
+      "must_mention": ["refraction", "normals", "fresnel"],
+      "must_avoid": ["clouds", "tsl", "halftone"]
+    },
+    {
+      "id": "stylization_platform_combo",
+      "prompt": "I want a Kuwahara painterly filter applied as a post-processing pass — does it matter whether I write it in WebGPU TSL or classic WebGL?",
+      "expected_primary_lane": "shader-stylization",
+      "expected_first_references": [
+        "shader-stylization/references/stylized-recipes.md"
+      ],
+      "must_mention": ["kuwahara", "painterly", "post-processing"],
+      "must_avoid": ["caustics", "scattering", "fbm"]
+    },
+    {
+      "id": "volume_physical_scattering",
+      "prompt": "Explain Mie and Rayleigh scattering and how Beer-Lambert attenuation applies to a physically-based sky shader.",
+      "expected_primary_lane": "shader-volumetrics",
+      "expected_first_references": [
+        "shader-volumetrics/references/atmosphere-and-volume.md"
+      ],
+      "must_mention": ["mie", "rayleigh", "beer-lambert", "scattering"],
+      "must_avoid": ["halftone", "fresnel", "compute"]
+    },
+    {
+      "id": "router_painterly_cloudscape",
+      "prompt": "I want a painterly dreamy cloudscape where the final image has heavy Kuwahara oil-brush strokes applied in a post-processing pass.",
+      "expected_primary_lane": "shader-stylization",
+      "expected_first_references": [
+        "shader-stylization/references/stylized-recipes.md"
+      ],
+      "must_mention": ["painterly", "kuwahara", "post-processing"],
+      "must_avoid": ["caustics", "tsl", "fresnel"]
     }
   ]
 }

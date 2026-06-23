@@ -38,6 +38,15 @@ Distilled from:
 - Use attributes when each point needs distinct state.
 - Consider an FBO or simulation texture only when particle history matters between frames.
 
+### Noise and Domain Warping
+
+- Use value noise or gradient noise (Perlin-style) as the base layer for organic variation.
+- Layer multiple noise octaves with decreasing amplitude and increasing frequency to build fBm (fractional Brownian motion). Each octave adds finer detail without changing the overall shape.
+- Apply domain warping by feeding one fBm result into the input coordinates of another fBm call. This produces organic, fluid, self-similar distortion that looks nothing like a simple texture.
+- Worley noise (cellular noise) generates natural cell boundaries and crack patterns, useful for surface detail or voronoi-style structure.
+- Control character with the octave count, lacunarity (frequency multiplier per octave), and gain (amplitude multiplier per octave) rather than random texture lookups.
+- Keep the noise function deterministic and pure — seed randomness through a hash of UV or position, not time, so results are stable under camera movement.
+
 ## Tradeoffs
 
 - Raymarching gives fast visual iteration, but it can get expensive quickly.
@@ -53,3 +62,8 @@ Distilled from:
 - `attributes`
 - `particles`
 - `space`
+- `fbm`
+- `domain warping`
+- `worley`
+- `gradient noise`
+- `noise`

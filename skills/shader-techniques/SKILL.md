@@ -24,11 +24,11 @@ This lane is explicitly for routing and choosing between shader families before 
 
 ## Routing Cues
 
-- Route to `shader-fundamentals` for SDFs, raymarching, uniforms, noise, particles, and "teach me shaders" requests.
-- Route to `shader-stylization` for halftone, dithering, painterly, Moebius, comic, CRT, or graphic post-processing looks.
+- Route to `shader-fundamentals` for SDFs, raymarching, uniforms, noise, fBm, domain warping, particles, and "teach me shaders" requests.
+- Route to `shader-stylization` for halftone, dithering, painterly, Moebius, comic, CRT, bloom, glow, lens flare, or graphic post-processing looks.
 - Route to `shader-lighting` for refraction, dispersion, caustics, Fresnel-driven material shaping, or light projection.
-- Route to `shader-volumetrics` for clouds, shafts, fog-like raymarching, atmospheric scattering, sky rendering, or LUT-based atmosphere work.
-- Route to `shader-platforms` for React Three Fiber integration, render targets, FBO particles, TSL, WebGPU, or compute-shader decisions.
+- Route to `shader-volumetrics` for clouds, shafts, fog, depth-based atmosphere, atmospheric scattering, sky rendering, Mie/Rayleigh scattering, or LUT-based atmosphere work.
+- Route to `shader-platforms` for React Three Fiber integration, render targets, FBO particles, drei ecosystem helpers, TSL, WebGPU, or compute-shader decisions.
 - Stay in `shader-techniques` if the user is still choosing between raymarching, post-processing, volumetrics, lighting, and WebGPU.
 
 ## Pitfalls

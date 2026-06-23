@@ -18,8 +18,8 @@ done
 
 echo "Checking benchmark case count"
 case_count="$(rg -c '"id":' "$ROOT/evals/shader-benchmark/cases.json")"
-if [[ "$case_count" != "10" ]]; then
-  echo "Expected 10 benchmark cases, found $case_count" >&2
+if [[ "$case_count" != "18" ]]; then
+  echo "Expected 18 benchmark cases, found $case_count" >&2
   exit 1
 fi
 

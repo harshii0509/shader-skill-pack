@@ -42,6 +42,15 @@ Distilled from:
 - Use TSL when node-based shader construction and WebGPU-era features help the team move faster.
 - Reach for compute shaders when the problem is truly data-parallel simulation, not just ordinary shading.
 
+### R3F Ecosystem Helpers
+
+- Use `@react-three/drei` for pre-built R3F helpers: OrbitControls, useHelper, Environment, GradientTexture, Instances, and geometry abstractions that reduce boilerplate without losing access to the underlying Three.js objects.
+- Use `@react-three/postprocessing` to add effects via the EffectComposer component, which handles pass ordering, blending, and depth buffer access for you.
+- Stack effects inside EffectComposer: Bloom, Vignette, SMAA, DepthOfField, and custom Effect subclasses.
+- Write a custom Effect class (extending `Effect` from `postprocessing`) when you need a bespoke shader pass that integrates with the pipeline's blending and depth handling.
+- Prefer drei and the postprocessing ecosystem for R3F projects over bare Three.js pass APIs, which bypass R3F's declarative model and make the render loop harder to reason about.
+- The postprocessing EffectComposer replaces Three.js's built-in EffectComposer — do not mix them in the same scene.
+
 ## Tradeoffs
 
 - React Three Fiber speeds iteration, but hidden abstraction can obscure low-level pipeline issues.
@@ -59,3 +68,6 @@ Distilled from:
 - `tsl`
 - `webgpu`
 - `compute`
+- `drei`
+- `postprocessing`
+- `effectcomposer`
