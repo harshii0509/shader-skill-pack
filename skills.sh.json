@@ -1,5 +1,15 @@
 {
   "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "name": "shader-skill-pack",
+  "version": "1.0.0",
+  "description": "6-skill suite for shader work across routing, fundamentals, stylization, lighting, volumetrics, and platform decisions — distilled from Maxime Heckel's shader articles.",
+  "author": "harshii0509",
+  "repository": "https://github.com/harshii0509/shader-skill-pack",
+  "homepage": "https://blog.maximeheckel.com",
+  "attribution": {
+    "label": "Distilled from Maxime Heckel's shader writing",
+    "url": "https://blog.maximeheckel.com"
+  },
   "notGrouped": "bottom",
   "groupings": [
     {

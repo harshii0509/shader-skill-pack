@@ -44,3 +44,11 @@ Mouse, scroll, and time uniforms are easiest to reason about after the static im
 ## When To Read References
 
 - Read [references/foundations.md](references/foundations.md) for SDF, raymarching, particles, uniforms, render-loop setup, and scene-growth patterns.
+
+## Attribution
+
+Distilled from [Maxime Heckel's](https://blog.maximeheckel.com) shader writing.
+
+Primary sources:
+- [Painting with Math: A Gentle Study of Raymarching](https://blog.maximeheckel.com/posts/painting-with-math-a-gentle-study-of-raymarching/)
+- [The Study of Shaders with React Three Fiber](https://blog.maximeheckel.com/posts/the-study-of-shaders-with-react-three-fiber/)

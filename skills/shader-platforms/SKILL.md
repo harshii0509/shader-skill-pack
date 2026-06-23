@@ -44,3 +44,13 @@ Do not move to compute or WebGPU just because it is newer. Move when scale, simu
 ## When To Read References
 
 - Read [references/platform-patterns.md](references/platform-patterns.md) for React Three Fiber, render targets, offscreen scenes, FBO particles, TSL, WebGPU, compute, and scene-transition patterns.
+
+## Attribution
+
+Distilled from [Maxime Heckel's](https://blog.maximeheckel.com) shader writing.
+
+Primary sources:
+- [Field Guide to TSL and WebGPU](https://blog.maximeheckel.com/posts/field-guide-to-tsl-and-webgpu/)
+- [Beautiful and Mind-Bending Effects with WebGL Render Targets](https://blog.maximeheckel.com/posts/beautiful-and-mind-bending-effects-with-webgl-render-targets/)
+- [The Magical World of Particles with React Three Fiber and Shaders](https://blog.maximeheckel.com/posts/the-magical-world-of-particles-with-react-three-fiber-and-shaders/)
+- [Building a Vaporwave Scene with Three.js](https://blog.maximeheckel.com/posts/vaporwave-3d-scene-with-threejs/)

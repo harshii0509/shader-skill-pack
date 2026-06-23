@@ -42,3 +42,12 @@ Volumetric work gets expensive fast. Reduce steps, bound the effect, or move to 
 ## When To Read References
 
 - Read [references/atmosphere-and-volume.md](references/atmosphere-and-volume.md) for clouds, scattering, light shafts, sky models, planetary atmosphere, shadow mapping, and LUT strategies.
+
+## Attribution
+
+Distilled from [Maxime Heckel's](https://blog.maximeheckel.com) shader writing.
+
+Primary sources:
+- [Real-time Dreamy Cloudscapes with Volumetric Raymarching](https://blog.maximeheckel.com/posts/real-time-cloudscapes-with-volumetric-raymarching/)
+- [On Shaping Light](https://blog.maximeheckel.com/posts/shaping-light-volumetric-lighting-with-post-processing-and-raymarching/)
+- [On Rendering the Sky, Sunsets, and Planets](https://blog.maximeheckel.com/posts/on-rendering-the-sky-sunsets-and-planets/)

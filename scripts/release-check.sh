@@ -28,8 +28,21 @@ for skill in shader-techniques shader-fundamentals shader-stylization shader-lig
   test -f "$ROOT/skills/$skill/SKILL.md"
 done
 
+echo "Checking attribution sections in SKILL.md files"
+for skill in shader-techniques shader-fundamentals shader-stylization shader-lighting shader-volumetrics shader-platforms; do
+  rg -q '## Attribution' "$ROOT/skills/$skill/SKILL.md" || { echo "Missing ## Attribution in $skill/SKILL.md" >&2; exit 1; }
+  rg -q 'blog.maximeheckel.com' "$ROOT/skills/$skill/SKILL.md" || { echo "Missing blog.maximeheckel.com in $skill/SKILL.md" >&2; exit 1; }
+done
+
+echo "Checking skills.sh.json pack metadata"
+rg -q '"name"' "$ROOT/skills.sh.json"
+rg -q '"author"' "$ROOT/skills.sh.json"
+rg -q '"attribution"' "$ROOT/skills.sh.json"
+
 echo "Checking README public install URLs"
 rg -q 'https://github.com/harshii0509/shader-skill-pack/tree/main/skills/shader-techniques' "$ROOT/README.md"
 rg -q 'https://github.com/harshii0509/shader-skill-pack/tree/main/skills/shader-platforms' "$ROOT/README.md"
+rg -q 'npx skills add harshii0509/shader-skill-pack' "$ROOT/README.md"
+rg -q 'https://skills.sh/harshii0509/shader-skill-pack' "$ROOT/README.md"
 
 echo "Release check passed"

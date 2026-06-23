@@ -44,3 +44,14 @@ Decide whether the effect replaces the source, tints it, or layers over it. Many
 ## When To Read References
 
 - Read [references/stylized-recipes.md](references/stylized-recipes.md) for halftone, cmyk, moire, dithering, kuwahara, moebius, and post-processing recipes.
+
+## Attribution
+
+Distilled from [Maxime Heckel's](https://blog.maximeheckel.com) shader writing.
+
+Primary sources:
+- [Shades of Halftone](https://blog.maximeheckel.com/posts/shades-of-halftone/)
+- [The Art of Dithering and Retro Shading for the Web](https://blog.maximeheckel.com/posts/the-art-of-dithering-and-retro-shading-web/)
+- [Post-Processing Shaders as a Creative Medium](https://blog.maximeheckel.com/posts/post-processing-as-a-creative-medium/)
+- [Moebius-style Post-Processing and Other Stylized Shaders](https://blog.maximeheckel.com/posts/moebius-style-post-processing/)
+- [On Crafting Painterly Shaders](https://blog.maximeheckel.com/posts/on-crafting-painterly-shaders/)

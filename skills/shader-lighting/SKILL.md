@@ -44,3 +44,11 @@ Too much distortion or color spread quickly stops looking like glass or believab
 ## When To Read References
 
 - Read [references/light-material-recipes.md](references/light-material-recipes.md) for refraction, dispersion, Fresnel, caustics, projection, normals, and color-space guidance.
+
+## Attribution
+
+Distilled from [Maxime Heckel's](https://blog.maximeheckel.com) shader writing.
+
+Primary sources:
+- [Refraction, Dispersion, and Other Shader Light Effects](https://blog.maximeheckel.com/posts/refraction-dispersion-and-other-shader-light-effects/)
+- [Shining a Light on Caustics with Shaders and React Three Fiber](https://blog.maximeheckel.com/posts/caustics-in-webgl/)

@@ -2,6 +2,12 @@
 
 This repository distributes the shader skill pack only. It does not redistribute the original article source or any upstream code samples that informed the guidance.
 
+## Primary Credit
+
+This pack was created by studying and distilling Maxime Heckel's shader writing. Credit for the original articles, shader breakdowns, visual explanations, and teaching approach belongs to Maxime Heckel:
+
+- [Maxime Heckel's blog](https://blog.maximeheckel.com/)
+
 ## Primary Study Sources
 
 - [Shades of Halftone](https://blog.maximeheckel.com/posts/shades-of-halftone/)
@@ -26,6 +32,7 @@ This repository distributes the shader skill pack only. It does not redistribute
 
 ## Notes
 
+- Maxime Heckel is the primary author of the articles and shader explanations that informed this pack.
 - These sources informed routing, implementation guidance, and benchmark construction in the skill pack.
 - This repository contains original skill instructions, references, and eval materials derived from study and packaging work.
 - Use the linked original articles for the full source material, examples, and historical context.

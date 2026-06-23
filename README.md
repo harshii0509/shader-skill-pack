@@ -4,6 +4,26 @@ A reusable 6-skill suite for shader work across routing, fundamentals, stylizati
 
 This pack distills the Tier 1 and Tier 2 shader articles from Maxime Heckel's blog into reusable Codex and Claude skills.
 
+Original shader research, explanations, and article examples are credited to Maxime Heckel. This repository packages original skill instructions derived from studying his writing; it does not republish the original articles or claim authorship of the underlying shader techniques.
+
+## Quick Start
+
+Install the pack with the `skills` CLI:
+
+```bash
+npx skills add harshii0509/shader-skill-pack
+```
+
+Discovery page:
+
+- [skills.sh/harshii0509/shader-skill-pack](https://skills.sh/harshii0509/shader-skill-pack)
+
+GitHub repo:
+
+- [github.com/harshii0509/shader-skill-pack](https://github.com/harshii0509/shader-skill-pack)
+
+If the `skills.sh` page or badge does not appear immediately after release, that is usually indexing or cache delay rather than a repo problem.
+
 ## Included Skills
 
 - `shader-techniques` - router skill that picks the right shader lane
@@ -94,7 +114,7 @@ Answer only. Route to the best shader lane, load the first references, then give
 
 ## Attribution
 
-This repo ships the skill pack only. The study sources that informed it are credited in [ATTRIBUTION.md](./ATTRIBUTION.md) and are not redistributed here.
+This repo ships the skill pack only. The study sources that informed it are credited in [ATTRIBUTION.md](./ATTRIBUTION.md) and are not redistributed here. Maxime Heckel's blog is the primary study source for the techniques and article structure that informed this pack.
 
 ## Maintainer Commands
 
