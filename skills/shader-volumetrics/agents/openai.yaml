@@ -1,0 +1,4 @@
+interface:
+  display_name: "Shader Volumetrics"
+  short_description: "Build clouds, scattering, sky, and atmospheric effects"
+  default_prompt: "Use $shader-volumetrics to build the cloud, light-scattering, or atmospheric part of this shader effect."

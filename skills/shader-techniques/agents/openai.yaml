@@ -1,0 +1,4 @@
+interface:
+  display_name: "Shader Technique Router"
+  short_description: "Choose the right shader lane before building"
+  default_prompt: "Use $shader-techniques to route this shader request into the right lane and load the best first references."

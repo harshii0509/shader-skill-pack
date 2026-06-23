@@ -1,0 +1,4 @@
+interface:
+  display_name: "Shader Fundamentals"
+  short_description: "Build core GLSL, SDF, and raymarching effects"
+  default_prompt: "Use $shader-fundamentals to build this effect from core shader primitives before adding extra rendering layers."

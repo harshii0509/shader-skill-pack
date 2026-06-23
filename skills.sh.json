@@ -1,0 +1,48 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "Router",
+      "description": "Start here when an agent needs to choose the right shader family before implementing anything.",
+      "skills": [
+        "shader-techniques"
+      ]
+    },
+    {
+      "title": "Fundamentals",
+      "description": "Core GLSL, SDF, raymarching, uniforms, and first-principles shader construction.",
+      "skills": [
+        "shader-fundamentals"
+      ]
+    },
+    {
+      "title": "Stylization",
+      "description": "Halftone, dithering, painterly, comic, and graphic post-processing looks.",
+      "skills": [
+        "shader-stylization"
+      ]
+    },
+    {
+      "title": "Lighting",
+      "description": "Refraction, dispersion, Fresnel shaping, and caustic light effects.",
+      "skills": [
+        "shader-lighting"
+      ]
+    },
+    {
+      "title": "Volumetrics",
+      "description": "Clouds, light shafts, scattering, skies, and atmospheric rendering.",
+      "skills": [
+        "shader-volumetrics"
+      ]
+    },
+    {
+      "title": "Platforms",
+      "description": "React Three Fiber, render targets, FBO particles, TSL, WebGPU, and compute decisions.",
+      "skills": [
+        "shader-platforms"
+      ]
+    }
+  ]
+}

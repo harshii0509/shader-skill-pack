@@ -1,0 +1,4 @@
+interface:
+  display_name: "Shader Lighting"
+  short_description: "Build refraction, dispersion, and caustic light effects"
+  default_prompt: "Use $shader-lighting to solve the light and material behavior in this shader effect before adding extra styling."

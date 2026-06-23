@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "harness_instruction": "Answer only. Route to the best shader lane, load the first references, then give a short recommendation with the main tradeoff.",
+  "cases": [
+    {
+      "id": "router_open_ended_effect",
+      "prompt": "I want a shader-driven scene, but I am not sure whether this is a raymarching problem, a post-processing problem, or a WebGPU problem yet.",
+      "expected_primary_lane": "shader-techniques",
+      "expected_first_references": [
+        "shader-techniques/references/article-map.md"
+      ],
+      "must_mention": ["routing", "raymarching", "post-processing", "webgpu"],
+      "must_avoid": ["visa process"]
+    },
+    {
+      "id": "fundamentals_sdf_intro",
+      "prompt": "Teach me the cleanest way to build my first SDF raymarched scene with GLSL and keep it extensible.",
+      "expected_primary_lane": "shader-fundamentals",
+      "expected_first_references": [
+        "shader-fundamentals/references/foundations.md"
+      ],
+      "must_mention": ["sdf", "raymarch", "uniforms", "space"],
+      "must_avoid": ["cmyk", "atmosphere lut"]
+    },
+    {
+      "id": "stylization_halftone_poster",
+      "prompt": "I want a CMYK risograph-style halftone poster shader with rotated channel screens and moire control.",
+      "expected_primary_lane": "shader-stylization",
+      "expected_first_references": [
+        "shader-stylization/references/stylized-recipes.md"
+      ],
+      "must_mention": ["cmyk", "halftone", "moire", "rotated"],
+      "must_avoid": ["shadow mapping", "planetary atmosphere"]
+    },
+    {
+      "id": "stylization_kuwahara",
+      "prompt": "Help me make a painterly post-processing pass with a Kuwahara look instead of a comic halftone.",
+      "expected_primary_lane": "shader-stylization",
+      "expected_first_references": [
+        "shader-stylization/references/stylized-recipes.md"
+      ],
+      "must_mention": ["kuwahara", "painterly", "post-processing"],
+      "must_avoid": ["caustics", "compute shader"]
+    },
+    {
+      "id": "lighting_glass_dispersion",
+      "prompt": "I need refractive glass with chromatic dispersion and better control over color separation and shininess.",
+      "expected_primary_lane": "shader-lighting",
+      "expected_first_references": [
+        "shader-lighting/references/light-material-recipes.md"
+      ],
+      "must_mention": ["refraction", "dispersion", "fresnel", "color space"],
+      "must_avoid": ["immigrating", "visa"]
+    },
+    {
+      "id": "lighting_pool_caustics",
+      "prompt": "How should I build dynamic pool caustics in React Three Fiber and keep the projected light believable?",
+      "expected_primary_lane": "shader-lighting",
+      "expected_first_references": [
+        "shader-lighting/references/light-material-recipes.md"
+      ],
+      "must_mention": ["caustics", "normals", "projection", "react three fiber"],
+      "must_avoid": ["planet", "dithering"]
+    },
+    {
+      "id": "volume_clouds",
+      "prompt": "I want dreamy raymarched clouds with self-shadowing and a path toward physically richer volumetric rendering.",
+      "expected_primary_lane": "shader-volumetrics",
+      "expected_first_references": [
+        "shader-volumetrics/references/atmosphere-and-volume.md"
+      ],
+      "must_mention": ["cloud", "volumetric", "shadow", "raymarch"],
+      "must_avoid": ["cmyk", "kuwahara"]
+    },
+    {
+      "id": "volume_sky_scattering",
+      "prompt": "I need to render a sky with sunsets and a planetary atmosphere, probably with scattering or a LUT if that is the right move.",
+      "expected_primary_lane": "shader-volumetrics",
+      "expected_first_references": [
+        "shader-volumetrics/references/atmosphere-and-volume.md"
+      ],
+      "must_mention": ["sky", "atmosphere", "scattering", "lut"],
+      "must_avoid": ["crt", "eslint"]
+    },
+    {
+      "id": "platforms_tsl_compute_particles",
+      "prompt": "Should I use TSL and WebGPU compute shaders for a particle system, or stay in older WebGL patterns for now?",
+      "expected_primary_lane": "shader-platforms",
+      "expected_first_references": [
+        "shader-platforms/references/platform-patterns.md"
+      ],
+      "must_mention": ["tsl", "webgpu", "compute", "particles"],
+      "must_avoid": ["immigrating", "dark mode"]
+    },
+    {
+      "id": "platforms_render_targets",
+      "prompt": "I need offscreen scenes, render targets, and a clean way to transition between scenes in React Three Fiber.",
+      "expected_primary_lane": "shader-platforms",
+      "expected_first_references": [
+        "shader-platforms/references/platform-patterns.md"
+      ],
+      "must_mention": ["render targets", "offscreen", "react three fiber", "transition"],
+      "must_avoid": ["visa", "seo"]
+    }
+  ]
+}

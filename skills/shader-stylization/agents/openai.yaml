@@ -1,0 +1,4 @@
+interface:
+  display_name: "Shader Stylization"
+  short_description: "Build halftone, dithering, comic, and painterly looks"
+  default_prompt: "Use $shader-stylization to turn this render into a stylized shader look and keep the art direction controllable."

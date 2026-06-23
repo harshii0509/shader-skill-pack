@@ -1,0 +1,4 @@
+interface:
+  display_name: "Shader Platforms"
+  short_description: "Choose the right Three.js, R3F, render-target, or WebGPU pipeline"
+  default_prompt: "Use $shader-platforms to structure this shader effect in the right rendering stack and pipeline."
